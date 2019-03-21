@@ -9,3 +9,4 @@ ActiveRecord::Base.establish_connection(
 ActiveRecord::Base.logger = Logger.new(STDOUT)
 
 require_all 'app'
+  # require_all is a gem in the Gemfile; allows us to require all files in a folder at once
