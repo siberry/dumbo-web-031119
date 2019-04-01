@@ -3,10 +3,6 @@ require 'sinatra/activerecord/rake'
 
 desc "Start our app console"
 task :console do
+  ActiveRecord::Base.logger = Logger.new(STDOUT)
   Pry.start
-end
-
-desc "Squirt out some emojis"
-task :emojis do
-  puts "🤯" * 10
 end

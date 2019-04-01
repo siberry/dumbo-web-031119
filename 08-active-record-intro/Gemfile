@@ -7,4 +7,8 @@ gem 'require_all'
 gem 'sqlite3', '~> 1.3.6'
 gem 'pry'
 
+<<<<<<< HEAD
+=======
+# Added at 2019-03-21 10:12:52 -0400 by graham.troyer-joy:
+>>>>>>> d197237f9fbf6154a810d7e9272869cc0d9a460e
 gem "colorize", "~> 0.8.1"

@@ -10,22 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_21_142443) do
+ActiveRecord::Schema.define(version: 2019_03_22_135747) do
 
-  create_table "spice_girls", force: :cascade do |t|
+  create_table "animals", force: :cascade do |t|
     t.string "name"
-    t.integer "spicyness"
-<<<<<<< HEAD
-    t.datetime "bith_date"
-=======
-    t.datetime "birth_date"
->>>>>>> d197237f9fbf6154a810d7e9272869cc0d9a460e
+    t.string "species"
+    t.string "temperament"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "escapes", force: :cascade do |t|
+    t.integer "zoo_id"
+    t.integer "animal_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "zoos", force: :cascade do |t|
     t.string "name"
+    t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
