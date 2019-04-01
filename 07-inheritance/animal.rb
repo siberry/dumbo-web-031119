@@ -1,5 +1,12 @@
 class Animal
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> ef0996dfb1471174b578bd1c774fba202e66d455
+>>>>>>> serenas_notes
   attr_accessor :name
 
   def initialize(name)
@@ -58,4 +65,8 @@ end
 end
 
 
+<<<<<<< HEAD
 >>>>>>> d197237f9fbf6154a810d7e9272869cc0d9a460e
+=======
+>>>>>>> ef0996dfb1471174b578bd1c774fba202e66d455
+>>>>>>> serenas_notes

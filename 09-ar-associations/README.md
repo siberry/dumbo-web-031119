@@ -5,5 +5,16 @@
 * How can I implement a has_many relationship in ActiveRecord?
   * What SQL will ActiveRecord use when I access this relationship?
 * How can I implement a has_many through: relationship in ActiveRecord?
+<<<<<<< HEAD
   * What SQL will ActiveRecord use when I access this relationship?
 
+=======
+  * What SQL will ActiveRecord use   when I access this relationship?
+
+  For every X, how many Y
+  For every Y, how many X
+
+  Foreign keys are really, really important
+  - Single source of truth
+  Humility and deleting code are great skills for a developer
+>>>>>>> serenas_notes
