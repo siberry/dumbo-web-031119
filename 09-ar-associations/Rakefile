@@ -3,9 +3,6 @@ require 'sinatra/activerecord/rake'
 
 desc "Start our app console"
 task :console do
-<<<<<<< HEAD
   ActiveRecord::Base.logger = Logger.new(STDOUT)
-=======
->>>>>>> serenas_notes
   Pry.start
 end
