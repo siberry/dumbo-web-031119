@@ -12,8 +12,24 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/cats" do
-    @cats = Cat.all
+    search_term = params[:query]
+    if search_term && search_term.length >0
+      @cats = Cat.search(search_term)
+    else
+      @cats = cat.all
+    end
     erb :index
+  end
+
+  get "/cats/:id" do
+    unless @cat
+      response.status = 404
+      "This kitty does not exist"
+    else
+      @cat = Cat.find_by(id: params[:id])
+        erb :kitty_info
+
+    end
   end
 
 end

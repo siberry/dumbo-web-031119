@@ -1,10 +1,16 @@
 HI I AM AN INDEX OF CATS
+<form>
+  <label for="search-term">Search Term</label>
+  <input id="search-term" type="text" name="query" value=""/>
+  <input type="submit" name="" value="Submit"/>
+</form>
+
 
 <ul>
   <% @cats.each do |cat| %>
     <li>
-      <%= cat.name  %>
+      <a href="/cats/<%= cat.id %>">
+      <%= cat.name  %> </a>
     </li>
   <% end %>
 </ul>
-
