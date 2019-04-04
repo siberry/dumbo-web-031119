@@ -3,7 +3,7 @@ class CreateSpiceGirls < ActiveRecord::Migration[5.2]
     create_table :spice_girls do |t|
       t.string :name
       t.integer :spicyness
-      t.datetime :bith_date
+      t.datetime :birth_date
       t.timestamps
     end
   end
